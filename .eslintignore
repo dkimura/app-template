@@ -1,0 +1,6 @@
+!/.storybook
+**/node_modules
+
+# dist dir
+storybook-static
+coverage

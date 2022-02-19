@@ -1,6 +1,6 @@
 /** @type {import('@storybook/react').Parameters} */
 export const parameters = {
-  actions: { argTypesRegex: '^on[A-Z].*' },
+  actions: { argTypesRegex: '^on.*' },
   controls: {
     matchers: {
       color: /(background|color)$/i,
@@ -8,3 +8,6 @@ export const parameters = {
     },
   },
 }
+
+/** @type {import('@storybook/react').DecoratorFn[]} */
+// export const decorators = []

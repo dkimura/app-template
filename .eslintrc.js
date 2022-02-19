@@ -30,13 +30,27 @@ const config = {
     'sort-destructure-keys',
     'sort-keys-fix',
     'testing-library',
+    'unused-imports',
   ],
   rules: {
+    'import/no-extraneous-dependencies': [
+      'error',
+      {
+        devDependencies: [
+          '**/.storybook/**/*.{js,jsx,ts,tsx}',
+          '**/*.{config,stories}.{js,jsx,ts,tsx}',
+          '**/*.{test,spec}.{ts,tsx}',
+          '**/test/**/*.{ts,tsx}',
+        ],
+      },
+    ],
     'import/prefer-default-export': 'off',
+    'react/display-name': 'off',
     'react/function-component-definition': [
       'error',
       {
         namedComponents: 'arrow-function',
+        unnamedComponents: 'arrow-function',
       },
     ],
     'react/jsx-no-bind': [
@@ -49,7 +63,9 @@ const config = {
         ignoreRefs: false,
       },
     ],
+    'react/jsx-props-no-spreading': 'off',
     'react/jsx-sort-props': 'error',
+    'react/require-default-props': 'off',
     'simple-import-sort/imports': [
       'error',
       {

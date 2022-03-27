@@ -2,7 +2,7 @@ import type { ComponentMeta, ComponentStoryObj } from '@storybook/react'
 
 import * as stories from '../components/Layout/index.stories'
 
-import Home from '.'
+import Home from './index.page'
 
 const meta: ComponentMeta<typeof Home> = {
   args: {},

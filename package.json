@@ -1,14 +1,15 @@
 {
-  "name": "nextjs-template",
   "private": true,
+  "name": "nextjs-template",
   "scripts": {
-    "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "build-storybook": "build-storybook",
+    "check-types": "tsc --project tsconfig.json --pretty --noEmit",
+    "dev": "next dev",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx --cache .",
     "prepare": "husky install",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "start": "next start",
+    "storybook": "start-storybook -p 6006"
   },
   "dependencies": {
     "@chakra-ui/react": "1.8.6",
